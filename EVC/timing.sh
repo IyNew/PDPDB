@@ -11,7 +11,7 @@ do
 	./timing.o $i 40 >> timing.csv
 done
 
-for i in 40 80 160 320 640 1280 2560 5120 10240
+for i in 40 80 160 320 640 1280 2560 5120
 do
     echo "Timing the case when k = 81920 and size_T = $i"
 	./timing.o 81920 $i >> timing.csv
